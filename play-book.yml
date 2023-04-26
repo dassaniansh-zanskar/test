@@ -1,11 +1,11 @@
 ---
-    - name: "Playing with Ansible and Git"
-      hosts: all
-      connection: local 
-      tasks:
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local 
+    tasks:
 
-        - name: "just execute a ls -lrt command"
-          shell: "echo pee ka boo mf"
-          register: "output"
+    - name: "just execute a ls -lrt command"
+      shell: "ls -lrt"
+      register: "output"
 
-        - debug: var=output.stdout_lines
+    - debug: var=output.stdout_lines
