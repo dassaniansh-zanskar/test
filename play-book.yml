@@ -1,8 +1,8 @@
 ---
     - name: "Playing with Ansible and Git"
-    hosts: all
-    connection: local 
-    tasks:
+      hosts: all
+      connection: local 
+      tasks:
 
     - name: "just execute a ls -lrt command"
       shell: "ls -lrt"
